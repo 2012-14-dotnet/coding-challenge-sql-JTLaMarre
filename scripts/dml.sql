@@ -48,7 +48,27 @@ Values
 
 SELECT SUM(Salary)
 FROM Employee.EmpDetails as ED
-INNER Join Employee.Employee as EM on EM.ID = ED.ID
-LEFT Join Employee.Department as DP on DP.ID = EM.ID
+INNER Join Employee.Employee as EM on EM.ID = ED.EmployeeID
+LEFT Join Employee.Department as DP on DP.ID = EM.DeptID
 WHERE DP.Name is 'Marketing';
+
+SELECT Count(ID)
+FROM Employee.Employee as emp
+INNER Join EmployeeID.Department as dpt on dpt.ID = emp.DeptID
+WHERE dpt.ID is '1';
+
+SELECT Count(ID)
+FROM Employee.Employee as emp
+INNER Join EmployeeID.Department as dpt on dpt.ID = emp.DeptID
+WHERE dpt.ID is '2';
+
+SELECT Count(ID)
+FROM Employee.Employee as emp
+INNER Join EmployeeID.Department as dpt on dpt.ID = emp.DeptID
+WHERE dpt.ID is '3';
+
+SELECT Count(ID)
+FROM Employee.Employee as emp
+INNER Join EmployeeID.Department as dpt on dpt.ID = emp.DeptID
+WHERE dpt.ID is '4';
 
