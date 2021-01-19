@@ -72,3 +72,7 @@ FROM Employee.Employee as emp
 INNER Join EmployeeID.Department as dpt on dpt.ID = emp.DeptID
 WHERE dpt.ID is '4';
 
+UPDATE Employee.EmpDetails
+set Salary = '90000'
+WHERE Employee = '4';
+
