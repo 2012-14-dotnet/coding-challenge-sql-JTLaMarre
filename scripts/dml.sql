@@ -27,4 +27,4 @@ insert into Employee.Department(ID,[Name],[Location])
 Values
 (1,"Grill","Back of Bob's Burgers");
 (2,"Register","Front Of Bob's Burgers");
-(3,"Marketing","DownTown Home Office");
+(3,"Sales","DownTown Home Office");
